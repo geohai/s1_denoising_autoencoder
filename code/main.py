@@ -28,7 +28,6 @@ def main():
     model = StridedConvAutoencoder.train_model(model=model,
                                                train_data=train_data)
     del train_data
-    print(1/0)
 
     eval_data = Sentinel1np(image_dir=args.dir, dataset="eval")
     StridedConvAutoencoder.validate_on_train_img(model=model,
