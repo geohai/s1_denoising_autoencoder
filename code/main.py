@@ -21,7 +21,6 @@ def main():
     args = parse_args()
 
     train_data = Sentinel1np(image_dir=args.dir, dataset="train")
-    print(1/0)
     train_data.save_training_img()
 
     model = StridedConvAutoencoder()
